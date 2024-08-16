@@ -1,0 +1,43 @@
+@import './devices.scss';
+
+@mixin phone {
+    @media screen and (max-width: ($xxs)) {
+        @content;
+    }
+}
+
+@mixin large-phone {
+    @media screen and (min-width: ($xxs+1)) and (max-width: ($xs)) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media only screen and (min-width: ($xs + 1px)) and (max-width: $sm) {
+        @content;
+    }
+}
+
+@mixin tablet-landscape {
+    @media screen and (min-width: ($sm + 1px)) and (max-width: $md) {
+        @content;
+    }
+}
+
+@mixin laptop {
+    @media screen and (min-width: ($md + 1px)) and (max-width: $lg) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: ($lg + 1px)) and (max-width: $xl) {
+        @content;
+    }
+}
+
+@mixin large-screen {
+    @media screen and (min-width: ($xl + 1px)) {
+        @content;
+    }
+}

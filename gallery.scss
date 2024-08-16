@@ -1,0 +1,425 @@
+@use './devices.scss';
+@use './media.scss';
+
+//@include lets you import mixins
+
+.header{
+    ul{
+        display: none;
+    }
+}
+
+.homeSection{
+    @include media.phone {
+        padding: 40px;
+        img{
+            display:none;
+        }
+        h1{
+            font-size: 40px;
+        }
+        a{
+            font-size: 20px;
+        }
+        &__scroll{
+            display: none;
+        }
+    }
+
+    @include media.large-phone {
+
+        img{
+            max-width: 250px;
+            max-height: 250px;
+        }
+    
+        &__text{
+            font-size: 12px;
+            padding-right: 20px;
+
+        }
+
+        h1{
+            font-size: 28px;
+        }
+
+        &__scroll{
+            padding-top: 50px;
+        }
+
+    }
+    @include media.tablet {
+        img{
+            max-width: 250px;
+            max-height: 250px;
+        }
+
+        &__text{
+            font-size: 12px;
+            padding-right: 20px;
+
+        }
+
+        h1{
+            font-size: 28px;
+        }
+
+        
+    }
+
+    @include media.tablet-landscape {
+
+        img{
+            max-width: 250px;
+            max-height: 250px;
+        }
+
+        &__text{
+            font-size: 12px;
+            padding-right: 20px;
+
+        }
+
+        h1{
+            font-size: 28px;
+        }
+
+        &__scroll{
+            padding-top: 50px;
+            font-size: 10px;
+        }
+         
+    }
+
+    @include media.laptop {
+
+        img{
+            max-width: 350px;
+            max-height: 350px;
+        }
+
+        &__text{
+            font-size: 16px;
+            padding-right: 20px;
+
+        }
+
+        h1{
+            font-size: 42px;
+        }
+
+        &__scroll{
+            padding-top: 50px;
+        }
+         
+    }
+
+    @include media.desktop {
+        
+
+    }
+
+    @include media.large-screen{
+        
+
+    }
+    
+}
+
+.skillsSection{
+    @include media.phone {
+    &__heading{
+        font-size: 20px;
+    }
+    &__text{
+        font-size: 11px;
+        line-height: 150%;
+    }
+    img{
+        width:60px;
+        height:100px
+    }
+    }
+
+    @include media.tablet {
+
+
+
+    &__heading{
+        font-size: 20px;
+    }
+
+    &__text{
+        font-size: 14px;
+        line-height: 150%;
+    }
+        
+        
+    }
+
+    @include media.tablet-landscape {
+         
+    }
+
+    @include media.laptop {
+         
+    }
+
+    @include media.desktop {
+        
+
+    }
+
+    @include media.large-screen{
+        
+
+    }
+    
+
+}
+
+.portfolioSection{
+
+    @include media.phone {
+        &__heading{
+            font-size: 20px;
+        }
+        .imageGrid
+        {
+            display:grid;
+            grid-template-columns: repeat(1,1fr);
+            //grid-template-rows: repeat(3,1fr);
+            grid-template-areas: 'One'
+                                 'Two'
+                                 'Three';
+            gap: 50px;
+        }
+        img{
+            width: 320px;
+            height: 210px;
+        }
+    }
+
+    @include media.large-phone {
+
+        &__heading{
+            font-size: 20px;
+        }
+
+        .imageGrid
+        {
+            display:grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(2,1fr);
+            grid-template-areas: 'One Two'
+                                 'Three Four';
+            gap: 50px;
+            
+            }
+
+        img{
+            width: 260px;
+            height: 170px;
+        }
+        
+        
+    }
+
+    @include media.tablet {
+
+        &__heading{
+            font-size: 20px;
+        }
+
+        .imageGrid
+        {
+            display:grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(2,1fr);
+            grid-template-areas: 'One Two'
+                                 'Three Four';
+            gap: 50px;
+            
+            }
+
+        img{
+            width: 260px;
+            height: 170px;
+        }
+        
+        
+    }
+
+    @include media.tablet-landscape {
+
+        .imageGrid
+        {
+            display:grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(2,1fr);
+            grid-template-areas: 'One Two'
+                                 'Three Four';
+            gap: 50px;
+            
+            }
+
+        img{
+            width: 260px;
+            height: 170px;
+        }
+         
+    }
+
+    @include media.laptop {
+
+        .imageGrid
+        {
+            display:grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(2,1fr);
+            grid-template-areas: 'One Two'
+                                 'Three Four';
+            gap: 50px;
+            
+            }
+
+        img{
+            width: 380px;
+            height: 270px;
+        }
+         
+    }
+
+    @include media.desktop {
+        
+
+    }
+
+    @include media.large-screen{
+        
+
+    }
+
+
+}
+
+.contactSection{
+
+    @include media.phone {
+        div{
+            padding: 40px;
+            margin:20px
+        }
+        &__contactBox{
+            &--heading{
+                font-size: 20px;
+            }
+            &--text{
+                font-size: 12px;
+            }
+            a{
+                font-size: 14px;
+            }
+        }
+    }
+
+    @include media.tablet {
+
+        padding: 60px;
+        div{
+            padding: 40px 50px;
+            margin: 20px;
+
+        }
+
+        &__contactBox{
+
+            padding: 30px 75px;
+            margin: 0px;
+
+            &--heading{
+                font-size: 22px;
+            }
+
+            &--text{
+                font-size: 14px;
+            }
+
+        }
+        
+    }
+
+    @include media.tablet-landscape {
+         
+    }
+
+    @include media.laptop {
+         
+    }
+
+    @include media.desktop {
+        
+
+    }
+
+    @include media.large-screen{
+        
+
+    }   
+
+}
+
+.aboutSection{
+
+    @include media.phone {
+        
+
+
+    }
+
+    @include media.tablet {
+
+        padding: 60px;
+        div{
+            padding: 40px 50px;
+            margin: 20px;
+
+        }
+
+        &__contactBox{
+
+            padding: 30px 75px;
+            margin: 0px;
+
+            &--heading{
+                font-size: 22px;
+            }
+
+            &--text{
+                font-size: 14px;
+            }
+
+        }
+        
+    }
+
+    @include media.tablet-landscape {
+         
+    }
+
+    @include media.laptop {
+         
+    }
+
+    @include media.desktop {
+        
+
+    }
+
+    @include media.large-screen{
+        
+
+    } 
+
+}
+

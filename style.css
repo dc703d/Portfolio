@@ -1,0 +1,507 @@
+.header ul {
+  display: none;
+}
+
+@media screen and (max-width: 576px) {
+  .homeSection {
+    padding: 40px;
+  }
+  .homeSection img {
+    display: none;
+  }
+  .homeSection h1 {
+    font-size: 40px;
+  }
+  .homeSection a {
+    font-size: 20px;
+  }
+  .homeSection__scroll {
+    display: none;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 734px) {
+  .homeSection img {
+    max-width: 250px;
+    max-height: 250px;
+  }
+  .homeSection__text {
+    font-size: 12px;
+    padding-right: 20px;
+  }
+  .homeSection h1 {
+    font-size: 28px;
+  }
+  .homeSection__scroll {
+    padding-top: 50px;
+  }
+}
+@media only screen and (min-width: 735px) and (max-width: 768px) {
+  .homeSection img {
+    max-width: 250px;
+    max-height: 250px;
+  }
+  .homeSection__text {
+    font-size: 12px;
+    padding-right: 20px;
+  }
+  .homeSection h1 {
+    font-size: 28px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .homeSection img {
+    max-width: 250px;
+    max-height: 250px;
+  }
+  .homeSection__text {
+    font-size: 12px;
+    padding-right: 20px;
+  }
+  .homeSection h1 {
+    font-size: 28px;
+  }
+  .homeSection__scroll {
+    padding-top: 50px;
+    font-size: 10px;
+  }
+}
+@media screen and (min-width: 993px) and (max-width: 1348px) {
+  .homeSection img {
+    max-width: 350px;
+    max-height: 350px;
+  }
+  .homeSection__text {
+    font-size: 16px;
+    padding-right: 20px;
+  }
+  .homeSection h1 {
+    font-size: 42px;
+  }
+  .homeSection__scroll {
+    padding-top: 50px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .skillsSection__heading {
+    font-size: 20px;
+  }
+  .skillsSection__text {
+    font-size: 11px;
+    line-height: 150%;
+  }
+  .skillsSection img {
+    width: 60px;
+    height: 100px;
+  }
+}
+@media only screen and (min-width: 735px) and (max-width: 768px) {
+  .skillsSection__heading {
+    font-size: 20px;
+  }
+  .skillsSection__text {
+    font-size: 14px;
+    line-height: 150%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .portfolioSection__heading {
+    font-size: 20px;
+  }
+  .portfolioSection .imageGrid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "One" "Two" "Three";
+    gap: 50px;
+  }
+  .portfolioSection img {
+    width: 320px;
+    height: 210px;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 734px) {
+  .portfolioSection__heading {
+    font-size: 20px;
+  }
+  .portfolioSection .imageGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "One Two" "Three Four";
+    gap: 50px;
+  }
+  .portfolioSection img {
+    width: 260px;
+    height: 170px;
+  }
+}
+@media only screen and (min-width: 735px) and (max-width: 768px) {
+  .portfolioSection__heading {
+    font-size: 20px;
+  }
+  .portfolioSection .imageGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "One Two" "Three Four";
+    gap: 50px;
+  }
+  .portfolioSection img {
+    width: 260px;
+    height: 170px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .portfolioSection .imageGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "One Two" "Three Four";
+    gap: 50px;
+  }
+  .portfolioSection img {
+    width: 260px;
+    height: 170px;
+  }
+}
+@media screen and (min-width: 993px) and (max-width: 1348px) {
+  .portfolioSection .imageGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "One Two" "Three Four";
+    gap: 50px;
+  }
+  .portfolioSection img {
+    width: 380px;
+    height: 270px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .contactSection div {
+    padding: 40px;
+    margin: 20px;
+  }
+  .contactSection__contactBox--heading {
+    font-size: 20px;
+  }
+  .contactSection__contactBox--text {
+    font-size: 12px;
+  }
+  .contactSection__contactBox a {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 735px) and (max-width: 768px) {
+  .contactSection {
+    padding: 60px;
+  }
+  .contactSection div {
+    padding: 40px 50px;
+    margin: 20px;
+  }
+  .contactSection__contactBox {
+    padding: 30px 75px;
+    margin: 0px;
+  }
+  .contactSection__contactBox--heading {
+    font-size: 22px;
+  }
+  .contactSection__contactBox--text {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 735px) and (max-width: 768px) {
+  .aboutSection {
+    padding: 60px;
+  }
+  .aboutSection div {
+    padding: 40px 50px;
+    margin: 20px;
+  }
+  .aboutSection__contactBox {
+    padding: 30px 75px;
+    margin: 0px;
+  }
+  .aboutSection__contactBox--heading {
+    font-size: 22px;
+  }
+  .aboutSection__contactBox--text {
+    font-size: 14px;
+  }
+}
+body {
+  margin: 0px;
+  cursor: url("./media/cursor.cur"), crosshair;
+}
+
+a {
+  text-decoration: none;
+  color: #B026FF;
+}
+
+main {
+  color: #E6E6E6;
+}
+
+.header {
+  background-color: #1a1a1d;
+  margin: 0px;
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__list {
+  list-style-type: none;
+  display: flex;
+  padding: 5px 30px;
+}
+.header__list--link {
+  text-decoration: none;
+  color: #E6E6E6;
+  transition: 0.3s;
+}
+.header__list--link:hover {
+  transform: scale(1.15);
+}
+.header__logo {
+  font-size: 50px;
+  color: #B026FF;
+  padding: 0px 50px;
+}
+
+.homeSection {
+  background-color: #1a1a1d;
+  display: flex;
+  justify-content: space-around;
+  padding: 80px;
+}
+.homeSection__text {
+  font-family: "Kode Mono", monospace;
+  padding-right: 50px;
+  line-height: 200%;
+}
+.homeSection__title {
+  font-size: 50px;
+  line-height: 150%;
+}
+.homeSection__title--colouredText {
+  color: #B026FF;
+}
+.homeSection__image {
+  max-width: 450px;
+  max-height: 450px;
+}
+.homeSection__sidebar {
+  background-color: #B026FF;
+  position: fixed;
+  right: 0;
+  top: 15%;
+  height: 200px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-content: center;
+}
+.homeSection__scroll {
+  color: #B026FF;
+  padding-top: 80px;
+  font-size: 22px;
+}
+
+.skillsSection {
+  background-color: #1a1a1d;
+  padding: 80px 80px 0px 80px;
+}
+.skillsSection__imgGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 25px;
+}
+.skillsSection__textWrapper {
+  display: flex;
+  gap: 40px;
+  font-family: "Kode Mono", monospace;
+  padding-bottom: 50px;
+  line-height: 200%;
+}
+.skillsSection__img {
+  filter: invert(1) brightness(0.85);
+}
+.skillsSection__img--git {
+  grid-area: git;
+  place-self: center;
+  font-family: "Kode Mono", monospace;
+}
+.skillsSection__img--html {
+  grid-area: html;
+  place-self: center;
+  font-family: "Kode Mono", monospace;
+}
+.skillsSection__img--css {
+  grid-area: css;
+  place-self: center;
+  font-family: "Kode Mono", monospace;
+}
+.skillsSection__img--js {
+  grid-area: js;
+  place-self: center;
+  font-family: "Kode Mono", monospace;
+}
+.skillsSection__img--scss {
+  grid-area: scss;
+  place-self: center;
+  font-family: "Kode Mono", monospace;
+}
+.skillsSection__img--bem {
+  grid-area: bem;
+  place-self: center;
+  font-family: "Kode Mono", monospace;
+}
+.skillsSection__img--react {
+  grid-area: react;
+  place-self: center;
+  font-family: "Kode Mono", monospace;
+}
+.skillsSection__img--java {
+  grid-area: java;
+  place-self: center;
+  font-family: "Kode Mono", monospace;
+}
+.skillsSection__img--spring {
+  grid-area: spring;
+  place-self: center;
+  font-family: "Kode Mono", monospace;
+}
+
+.portfolioSection {
+  background-color: #1a1a1d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 80px;
+  padding: 80px;
+}
+.portfolioSection__heading {
+  font-family: "Kode Mono", monospace;
+  line-height: 200%;
+}
+.portfolioSection__heading--work {
+  color: #B026FF;
+  font-size: 28px;
+}
+.portfolioSection__imageGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "One Two Three" "Four Five Six";
+  gap: 80px;
+}
+.portfolioSection__image {
+  margin: auto;
+}
+.portfolioSection__image--projectOne {
+  display: flex;
+  flex-direction: column;
+  grid-area: One;
+  align-self: center;
+  justify-self: center;
+}
+.portfolioSection__image--projectTwo {
+  grid-area: Two;
+  align-self: center;
+  justify-self: center;
+}
+.portfolioSection__image--projectThree {
+  grid-area: Three;
+  align-self: center;
+  justify-self: center;
+}
+.portfolioSection__image--projectFour {
+  grid-area: Four;
+  align-self: center;
+  justify-self: center;
+}
+.portfolioSection__image--projectFive {
+  grid-area: Five;
+  align-self: center;
+  justify-self: center;
+}
+.portfolioSection__image--projectSix {
+  grid-area: Six;
+  align-self: center;
+  justify-self: center;
+}
+.portfolioSection__text {
+  font-family: "Kode Mono", monospace;
+  padding-top: 10px;
+}
+
+.contactSection {
+  background-color: #1a1a1d;
+  padding: 80px;
+}
+.contactSection__contactBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 100px;
+  margin: 50px;
+  background-color: #1e1e1e;
+  border: 3px solid #B026FF;
+}
+.contactSection__contactBox--heading {
+  font-family: "Kode Mono", monospace;
+}
+.contactSection__contactBox--text {
+  font-family: "Kode Mono", monospace;
+  line-height: 200%;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.contactSection__contactBox--button {
+  background-color: #1a1a1d;
+  color: #E6E6E6;
+  border: 3px solid #B026FF;
+  border-radius: 20px;
+  font-family: "Kode Mono", monospace;
+  font-size: 20px;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.contactSection__contactBox--button:hover {
+  transform: scale(1.1);
+}
+
+.aboutSection {
+  background-color: #1a1a1d;
+  padding: 80px;
+  font-family: "Kode Mono", monospace;
+  line-height: 200%;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "VT323", monospace;
+  background-color: #B026FF;
+}
+.footer__right {
+  font-size: 50px;
+  color: #1a1a1d;
+  padding: 10px 50px;
+}
+.footer__left {
+  color: #1a1a1d;
+  padding: 0px 50px;
+}
+
+/*# sourceMappingURL=style.css.map */

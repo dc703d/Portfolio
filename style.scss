@@ -1,0 +1,350 @@
+@import './gallery.scss';
+
+$backgroundColor: #1a1a1d;
+$primaryText: #E6E6E6;
+$purpleNeon: #B026FF;
+$font1: "Kode Mono", monospace;
+$font2: "VT323", monospace;
+$secondaryColour:#1e1e1e;
+
+
+body{
+    margin: 0px;
+    cursor: url("./media/cursor.cur"), crosshair;
+}
+
+a{
+    text-decoration: none;
+    color: $purpleNeon;
+}
+
+main{
+    
+    color: $primaryText;
+}
+
+.header{
+    background-color: $backgroundColor;
+    margin: 0px;
+    font-family: $font2;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    &__list{
+        list-style-type: none;
+        display: flex;
+        padding: 5px 30px;
+
+        &--link{
+            text-decoration: none;
+            color: $primaryText;
+            transition: 0.3s;
+        } 
+        &--link:hover{
+            transform: scale(1.15);
+        }
+    }
+
+    &__logo{
+        font-size: 50px;
+        color: $purpleNeon;
+        padding: 0px 50px;
+    }
+
+}
+
+.homeSection{
+    background-color: $backgroundColor;
+    display: flex;
+    justify-content: space-around;
+    padding: 80px;
+
+    &__text{
+        font-family: $font1;
+        padding-right: 50px;
+        line-height: 200%;
+    }
+
+    &__title{
+        font-size: 50px;
+        line-height: 150%;
+
+        &--colouredText{
+            color: $purpleNeon;
+        }
+
+    }
+
+    &__image{
+        max-width: 450px;
+        max-height:450px;
+    }
+
+    &__sidebar{
+        background-color: $purpleNeon;
+        position: fixed;
+        right: 0;
+        top: 15%;
+        
+        height: 200px;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-content: center;
+    }
+
+    &__scroll{
+        color: $purpleNeon;
+        padding-top: 80px;
+        font-size: 22px;
+    }
+
+}
+
+.skillsSection{
+    background-color: $backgroundColor;
+    padding: 80px 80px 0px 80px;
+
+    &__imgGrid{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        gap:25px
+    }
+
+    &__textWrapper{
+        display: flex;
+        gap: 40px;
+        font-family: $font1;
+        padding-bottom: 50px;
+        line-height: 200%;
+    }
+
+    &__img{
+        filter: invert(1) brightness(0.85);
+        
+
+        &--git{
+            grid-area: git;
+            place-self: center;
+            font-family: $font1;
+        }
+        &--html{
+            grid-area: html;
+            place-self: center;
+            font-family: $font1;
+        }
+        &--css{
+            grid-area: css;
+            place-self: center;
+            font-family: $font1;
+        }
+        &--js{
+            grid-area: js;
+            place-self: center;
+            font-family: $font1;
+        }
+        &--scss{
+            grid-area: scss;
+            place-self: center;
+            font-family: $font1;
+        }
+        &--bem{
+            grid-area: bem;
+            place-self: center;
+            font-family: $font1;
+        }
+        &--react{
+            grid-area: react;
+            place-self: center;
+            font-family: $font1;
+        }
+        &--java{
+            grid-area: java;
+            place-self: center;
+            font-family: $font1;
+        }
+        &--spring{
+            grid-area: spring;
+            place-self: center;
+            font-family: $font1;
+        }
+
+    }
+
+}
+
+.portfolioSection{
+    background-color: $backgroundColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 80px;
+    padding: 80px;
+
+    &__heading{
+        font-family: $font1;
+        line-height: 200%;
+        &--work{
+            color: $purpleNeon;
+            font-size: 28px;
+        }
+    }
+
+
+    &__imageGrid{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: 'One Two Three'
+                         'Four Five Six';
+    gap: 80px;
+    
+    }
+    
+    &__image{
+        margin:auto;
+
+        &--projectOne{
+            display: flex;
+            flex-direction: column;
+            grid-area: One;
+            align-self: center;
+            justify-self: center;
+            
+        }
+        &--projectTwo{
+            grid-area: Two;
+            align-self: center;
+            justify-self: center;
+        }
+        &--projectThree{
+            grid-area: Three;
+            align-self: center;
+            justify-self: center;
+        }
+        &--projectFour{
+            grid-area: Four;
+            align-self: center;
+            justify-self: center;
+        }
+        &--projectFive{
+            grid-area: Five;
+            align-self: center;
+            justify-self: center;
+        }
+        &--projectSix{
+            grid-area: Six;
+            align-self: center;
+            justify-self: center;
+        }
+
+    }
+
+    &__text{
+        font-family: $font1;
+        padding-top: 10px;
+    }
+}
+
+.contactSection{
+    background-color: $backgroundColor;
+    padding: 80px;
+
+    &__contactBox{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 100px;
+        margin: 50px;
+        background-color: $secondaryColour;
+        border: 3px solid $purpleNeon;
+
+        &--heading{
+            font-family: $font1;
+        }
+
+        &--text{
+            font-family: $font1;
+            line-height: 200%;
+            padding-bottom: 20px;
+            text-align: center;
+        }
+
+        &--button{
+            background-color: $backgroundColor;
+            color: $primaryText;
+            border: 3px solid $purpleNeon;
+            border-radius: 20px;
+            font-family: $font1;
+            font-size: 20px;
+            padding: 10px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        &--button:hover{
+            transform: scale(1.10);
+        }
+
+    }
+}
+
+.aboutSection{
+    background-color: $backgroundColor;
+    padding: 80px;
+    font-family: $font1;
+    line-height: 200%;
+
+    &__heading{
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    font-family: $font2;
+    background-color: $purpleNeon;
+    &__right{
+        font-size: 50px;
+        color: $backgroundColor;
+        padding: 10px 50px;
+    }
+    &__left{
+        color: $backgroundColor;
+        padding: 0px 50px;
+    }
+
+}
+
+
+
