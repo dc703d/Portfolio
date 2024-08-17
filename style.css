@@ -1,32 +1,45 @@
-.header ul {
-  display: none;
+@media screen and (max-width: 576px) {
+  .mainBody {
+    padding: 55px;
+  }
 }
 
 @media screen and (max-width: 576px) {
-  .homeSection {
-    padding: 40px;
-  }
-  .homeSection img {
-    display: none;
-  }
-  .homeSection h1 {
-    font-size: 40px;
-  }
-  .homeSection a {
-    font-size: 20px;
-  }
-  .homeSection__scroll {
+  .header ul {
     display: none;
   }
 }
 @media screen and (min-width: 577px) and (max-width: 734px) {
+  .header ul {
+    padding: 0px 0px;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 576px) {
   .homeSection img {
-    max-width: 250px;
-    max-height: 250px;
+    display: none;
+  }
+  .homeSection h1 {
+    font-size: 50px;
+    width: 200px;
+  }
+  .homeSection p {
+    text-align: end;
+  }
+  .homeSection a {
+    font-size: 18px;
+  }
+  .homeSection__text {
+    padding-right: 0px;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 734px) {
+  .homeSection img {
+    max-width: 200px;
+    max-height: 200px;
   }
   .homeSection__text {
     font-size: 12px;
-    padding-right: 20px;
   }
   .homeSection h1 {
     font-size: 28px;
@@ -83,15 +96,24 @@
 }
 @media screen and (max-width: 576px) {
   .skillsSection__heading {
-    font-size: 20px;
+    font-size: 24px;
+  }
+  .skillsSection h2 {
+    margin: 0px;
   }
   .skillsSection__text {
     font-size: 11px;
     line-height: 150%;
+    text-align: justify;
+    margin: 0px;
   }
   .skillsSection img {
     width: 60px;
     height: 100px;
+  }
+  .skillsSection__textWrapper {
+    flex-direction: column;
+    gap: 0px;
   }
 }
 @media only screen and (min-width: 735px) and (max-width: 768px) {
@@ -105,7 +127,10 @@
 }
 @media screen and (max-width: 576px) {
   .portfolioSection__heading {
-    font-size: 20px;
+    font-size: 24px;
+  }
+  .portfolioSection__heading span {
+    font-size: 28px;
   }
   .portfolioSection .imageGrid {
     display: grid;
@@ -114,8 +139,17 @@
     gap: 50px;
   }
   .portfolioSection img {
-    width: 320px;
-    height: 210px;
+    width: 220px;
+    height: 180px;
+  }
+  .portfolioSection__imageGrid--projectFour {
+    display: none;
+  }
+  .portfolioSection__imageGrid--projectFive {
+    display: none;
+  }
+  .portfolioSection__imageGrid--projectSix {
+    display: none;
   }
 }
 @media screen and (min-width: 577px) and (max-width: 734px) {
@@ -127,11 +161,11 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: "One Two" "Three Four";
-    gap: 50px;
+    gap: 30px;
   }
   .portfolioSection img {
-    width: 260px;
-    height: 170px;
+    width: 180px;
+    height: 120px;
   }
 }
 @media only screen and (min-width: 735px) and (max-width: 768px) {
@@ -179,10 +213,11 @@
 @media screen and (max-width: 576px) {
   .contactSection div {
     padding: 40px;
-    margin: 20px;
+    margin: 0px;
   }
   .contactSection__contactBox--heading {
     font-size: 20px;
+    text-align: center;
   }
   .contactSection__contactBox--text {
     font-size: 12px;
@@ -210,6 +245,32 @@
     font-size: 14px;
   }
 }
+@media screen and (max-width: 576px) {
+  .aboutSection h2 {
+    font-size: 24px;
+  }
+  .aboutSection button {
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 20px;
+  }
+  .aboutSection button--para {
+    display: none;
+    font-size: 12px;
+  }
+  .aboutSection button h3 {
+    font-size: 12px;
+    text-align: center;
+    align-self: center;
+  }
+  .aboutSection ul {
+    font-size: 10px;
+    margin: 0px;
+  }
+}
 @media only screen and (min-width: 735px) and (max-width: 768px) {
   .aboutSection {
     padding: 60px;
@@ -229,6 +290,25 @@
     font-size: 14px;
   }
 }
+@media only screen and (min-width: 735px) and (max-width: 768px) {
+  .footer {
+    padding: 60px;
+  }
+  .footer div {
+    padding: 40px 50px;
+    margin: 20px;
+  }
+  .footer__contactBox {
+    padding: 30px 75px;
+    margin: 0px;
+  }
+  .footer__contactBox--heading {
+    font-size: 22px;
+  }
+  .footer__contactBox--text {
+    font-size: 14px;
+  }
+}
 body {
   margin: 0px;
   cursor: url("./media/cursor.cur"), crosshair;
@@ -241,6 +321,8 @@ a {
 
 main {
   color: #E6E6E6;
+  background-color: #1a1a1d;
+  padding: 80px;
 }
 
 .header {
@@ -253,11 +335,12 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px 0px;
 }
 .header__list {
   list-style-type: none;
   display: flex;
-  padding: 5px 30px;
+  padding: 0px 30px;
 }
 .header__list--link {
   text-decoration: none;
@@ -277,11 +360,9 @@ main {
   background-color: #1a1a1d;
   display: flex;
   justify-content: space-around;
-  padding: 80px;
 }
 .homeSection__text {
   font-family: "Kode Mono", monospace;
-  padding-right: 50px;
   line-height: 200%;
 }
 .homeSection__title {
@@ -316,7 +397,7 @@ main {
 
 .skillsSection {
   background-color: #1a1a1d;
-  padding: 80px 80px 0px 80px;
+  padding: 80px 0px;
 }
 .skillsSection__imgGrid {
   display: flex;
@@ -387,7 +468,6 @@ main {
   flex-direction: column;
   justify-content: center;
   gap: 80px;
-  padding: 80px;
 }
 .portfolioSection__heading {
   font-family: "Kode Mono", monospace;
@@ -443,10 +523,6 @@ main {
   padding-top: 10px;
 }
 
-.contactSection {
-  background-color: #1a1a1d;
-  padding: 80px;
-}
 .contactSection__contactBox {
   display: flex;
   flex-direction: column;
@@ -483,10 +559,39 @@ main {
 
 .aboutSection {
   background-color: #1a1a1d;
-  padding: 80px;
+  padding: 80px 0px;
   font-family: "Kode Mono", monospace;
   line-height: 200%;
+  display: flex;
+  flex-direction: column;
 }
+.aboutSection__heading {
+  margin-bottom: 60px;
+}
+.aboutSection__button {
+  background-color: #1a1a1d;
+  font-family: "Kode Mono", monospace;
+  color: #E6E6E6;
+  margin: 20px 50px;
+  border: 3px solid #B026FF;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 20px;
+  border-radius: 20px;
+  transition: ease-in-out 0.3s;
+}
+.aboutSection__button--list {
+  margin: 0px 80px;
+  list-style-type: "> ";
+}
+.aboutSection__button--para {
+  display: none;
+}
+.aboutSection__button:hover {
+  transform: scale(1.02);
+}
+
 .footer {
   display: flex;
   justify-content: space-between;

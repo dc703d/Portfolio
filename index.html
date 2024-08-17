@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daim Choudhary</title>
     <link rel="stylesheet" href="style.css">
-    <script src="./index.js"></script>
+    <script src="./script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=VT323&display=swap" rel="stylesheet">
@@ -20,7 +20,8 @@
             <li><a class="header__list header__list--link"href="#contactLink">//contact</a></li>
         </ul>
     </header>
-    <main>
+    
+    <main class="mainBody">
         <section class="homeSection">
             <div class="homeSection__text">
                 <h1 class="homeSection__title">I'm a<br/><span class="homeSection__title--colouredText">Junior Software Developer</span></h1>
@@ -94,7 +95,27 @@
 
         <section class="aboutSection" id="aboutLink">
             <h2 class="aboutSection__heading">MY JOURNEY</h2>
-            <p class="aboutSection__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores error iste perspiciatis minima id nostrum repudiandae sapiente. Similique atque natus cum eius voluptate eveniet laboriosam delectus, provident perspiciatis suscipit nostrum.</p>
+            <button onclick="openBox1()" id="educationButton" class="aboutSection__button">
+                <h3>BEng Robotics Engineering (Hons) @ Queen Mary's University of London</h3>
+                <h3>Sep 2021 - May 2024</h3>
+            </button>
+            <div class="aboutSection__button--para" id="educationPara">
+                <ul class="aboutSection__button--list">
+                    <li>Grade: First Class</li>
+                    <li>Modules including Mathematical & Computational Modelling, Object-Oriented Programming and Neural Networks</li>
+                    <li>Final Year Project titled 'Design and Development of a Myoelectric Prosthetic Hand with Tactile Sensing and Haptic Feedback'</li>
+                </ul>
+            </div>
+            <button onclick="openBox2()" id="workButton" class="aboutSection__button">
+                <h3>Trainee Software Engineer @ _nology</h3>
+                <h3>Aug 2024 - Oct 2024</h3>
+            </button>
+            <div class="aboutSection__button--para" id="workPara">
+                <ul class="aboutSection__button--list">
+                    <li>Course covering HTML, CSS, Javascript for Web Development</li>
+                    <li>Back-end Development based on Java and SpringBoot</li>
+                </ul>
+            </div>
 
         </section>
 

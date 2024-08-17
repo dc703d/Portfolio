@@ -20,6 +20,8 @@ a{
 
 main{
     color: $primaryText;
+    background-color: $backgroundColor;
+    padding: 80px;
 }
 
 .header{
@@ -32,11 +34,12 @@ main{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 0px;
     
     &__list{
         list-style-type: none;
         display: flex;
-        padding: 5px 30px;
+        padding: 0px 30px;
 
         &--link{
             text-decoration: none;
@@ -60,11 +63,10 @@ main{
     background-color: $backgroundColor;
     display: flex;
     justify-content: space-around;
-    padding: 80px;
 
     &__text{
         font-family: $font1;
-        padding-right: 50px;
+        //padding-right: 50px;
         line-height: 200%;
     }
 
@@ -88,7 +90,6 @@ main{
         position: fixed;
         right: 0;
         top: 15%;
-        
         height: 200px;
         padding: 5px;
         display: flex;
@@ -108,7 +109,7 @@ main{
 
 .skillsSection{
     background-color: $backgroundColor;
-    padding: 80px 80px 0px 80px;
+    padding: 80px 0px;
 
     &__imgGrid{
         display: flex;
@@ -186,7 +187,6 @@ main{
     flex-direction: column;
     justify-content: center;
     gap: 80px;
-    padding: 80px;
 
     &__heading{
         font-family: $font1;
@@ -253,8 +253,6 @@ main{
 }
 
 .contactSection{
-    background-color: $backgroundColor;
-    padding: 80px;
 
     &__contactBox{
         display: flex;
@@ -297,12 +295,37 @@ main{
 
 .aboutSection{
     background-color: $backgroundColor;
-    padding: 80px;
+    padding: 80px 0px;
     font-family: $font1;
     line-height: 200%;
-
+    display: flex;
+    flex-direction: column;
     &__heading{
-        
+        margin-bottom: 60px;
+    }
+
+    &__button{
+        background-color: $backgroundColor;
+        font-family: $font1;
+        color: $primaryText;
+        margin: 20px 50px;
+        border: 3px solid $purpleNeon;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        padding: 20px;
+        border-radius: 20px;
+        transition: ease-in-out .3s;
+        &--list{
+            margin: 0px 80px;
+            list-style-type: "> ";
+        }
+        &--para{
+            display: none;
+        }
+    }
+    &__button:hover{
+        transform: scale(1.02);
     }
 }
 .footer{
@@ -321,7 +344,6 @@ main{
         color: $backgroundColor;
         padding: 0px 50px;
     }
-
 }
 
 
