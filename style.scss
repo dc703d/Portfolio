@@ -10,6 +10,7 @@ $secondaryColour:#1e1e1e;
 
 body{
     margin: 0px;
+    padding: 0px;
     cursor: url("./media/cursor.cur"), crosshair;
 }
 
@@ -40,6 +41,7 @@ main{
         list-style-type: none;
         display: flex;
         padding: 0px 30px;
+        z-index: 2;
 
         &--link{
             text-decoration: none;
@@ -55,6 +57,7 @@ main{
         font-size: 50px;
         color: $purpleNeon;
         padding: 0px 50px;
+        z-index: 2;
     }
 
 }
@@ -83,6 +86,7 @@ main{
     &__image{
         max-width: 450px;
         max-height:450px;
+        z-index: 2;
     }
 
     &__sidebar{
@@ -97,6 +101,7 @@ main{
         gap: 10px;
         justify-content: center;
         align-content: center;
+        z-index: 2;
     }
 
     &__scroll{
@@ -116,7 +121,7 @@ main{
         flex-wrap: wrap;
         justify-content: space-evenly;
         align-items: center;
-        gap:25px
+        gap:25px;
     }
 
     &__textWrapper{
@@ -128,6 +133,7 @@ main{
     }
 
     &__img{
+        z-index: 2;
         filter: invert(1) brightness(0.85);
         
 
@@ -208,6 +214,7 @@ main{
     }
     
     &__image{
+        z-index: 2;
         margin:auto;
 
         &--projectOne{
@@ -343,6 +350,42 @@ main{
     &__left{
         color: $backgroundColor;
         padding: 0px 50px;
+    }
+}
+
+.stars{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.star{
+    position: absolute;
+    background-color: $purpleNeon;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(186,85,211,0.8), 0 0 20px rgba(186,85,211,0.6);
+    animation: blink 2s infinite ease-in-out alternate;
+}
+
+@keyframes blink{
+    0%{
+        opacity: 0;
+        transform: scale(0.5);
+        transform: rotate(45deg);
+    }
+    50%{
+        opacity: 1;
+        transform: scale(0.5);
+        transform: rotate(45deg);
+    }
+    100%{
+        opacity: 0;
+        transform: scale(1);
+        transform: rotate(45deg);
     }
 }
 
