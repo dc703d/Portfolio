@@ -18,7 +18,7 @@ function openBox2() {
 
 document.addEventListener("DOMContentLoaded", () => {
     const starContainer = document.querySelector('.stars');
-    const starCount = 200;
+    const starCount = 150;
     //const size = Math.random() * 2 + 1;
     for (let i = 0; i < starCount; i++) {
         let star = document.createElement('div');

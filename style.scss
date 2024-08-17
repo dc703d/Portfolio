@@ -6,7 +6,9 @@ $purpleNeon: #B026FF;
 $font1: "Kode Mono", monospace;
 $font2: "VT323", monospace;
 $secondaryColour:#1e1e1e;
-
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     margin: 0px;
@@ -283,6 +285,7 @@ main{
         }
 
         &--button{
+            z-index: 2;
             background-color: $backgroundColor;
             color: $primaryText;
             border: 3px solid $purpleNeon;
@@ -312,6 +315,7 @@ main{
     }
 
     &__button{
+        z-index: 2;
         background-color: $backgroundColor;
         font-family: $font1;
         color: $primaryText;
@@ -367,25 +371,20 @@ main{
     width: 2px;
     height: 2px;
     border-radius: 50%;
-    box-shadow: 0 0 10px rgba(186,85,211,0.8), 0 0 20px rgba(186,85,211,0.6);
-    animation: blink 2s infinite ease-in-out alternate;
+    box-shadow: 0 0 20px rgb(255, 255, 255), 0 0 40px rgba(133, 25, 186, 0.8), 0 0 60px rgba(195, 0, 255, 0.6);
+    animation: blink 3s infinite ease-in-out alternate;
 }
 
 @keyframes blink{
     0%{
         opacity: 0;
         transform: scale(0.5);
-        transform: rotate(45deg);
-    }
-    50%{
-        opacity: 1;
-        transform: scale(0.5);
-        transform: rotate(45deg);
+        
     }
     100%{
-        opacity: 0;
+        opacity: 1;
         transform: scale(1);
-        transform: rotate(45deg);
+
     }
 }
 
