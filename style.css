@@ -316,7 +316,7 @@ html {
 body {
   margin: 0px;
   padding: 0px;
-  cursor: url("./media/cursor.cur"), crosshair;
+  cursor: url("./media/cursor.cur") 25 15, crosshair;
 }
 
 a {
@@ -371,6 +371,7 @@ main {
 .homeSection__text {
   font-family: "Kode Mono", monospace;
   line-height: 200%;
+  z-index: 2;
 }
 .homeSection__title {
   font-size: 50px;
@@ -402,6 +403,7 @@ main {
   color: #B026FF;
   padding-top: 80px;
   font-size: 22px;
+  z-index: 2;
 }
 
 .skillsSection {
@@ -532,6 +534,20 @@ main {
 .portfolioSection__text {
   font-family: "Kode Mono", monospace;
   padding-top: 10px;
+}
+.portfolioSection__buttons {
+  font-size: 11px;
+  color: #E6E6E6;
+  display: flex;
+  gap: 10px;
+  margin: 10px 0px;
+}
+.portfolioSection__buttons a {
+  color: #E6E6E6;
+  font-family: "Kode Mono", monospace;
+  border: 2px solid #B026FF;
+  border-radius: 10px;
+  padding: 5px;
 }
 
 .contactSection__contactBox {

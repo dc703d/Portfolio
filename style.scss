@@ -13,7 +13,7 @@ html{
 body{
     margin: 0px;
     padding: 0px;
-    cursor: url("./media/cursor.cur"), crosshair;
+    cursor: url("./media/cursor.cur") 25 15, crosshair;
 }
 
 a{
@@ -71,8 +71,8 @@ main{
 
     &__text{
         font-family: $font1;
-        //padding-right: 50px;
         line-height: 200%;
+        z-index: 2;
     }
 
     &__title{
@@ -110,7 +110,11 @@ main{
         color: $purpleNeon;
         padding-top: 80px;
         font-size: 22px;
+        z-index: 2;
+       
+        
     }
+    
 
 }
 
@@ -259,6 +263,23 @@ main{
         font-family: $font1;
         padding-top: 10px;
     }
+
+    &__buttons{
+        font-size: 11px;
+        color: $primaryText;
+        display: flex;
+        gap: 10px;
+        margin: 10px 0px;
+    
+
+        a{
+            color: $primaryText;
+            font-family: $font1;
+            border: 2px solid $purpleNeon;
+        border-radius: 10px;
+        padding: 5px;
+        }
+    }
 }
 
 .contactSection{
@@ -387,6 +408,7 @@ main{
 
     }
 }
+
 
 
 
