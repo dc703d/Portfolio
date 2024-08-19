@@ -8,13 +8,22 @@
     @include media.phone {
         padding: 55px
     }
-
 }
 .header{
 
     @include media.phone {
         ul{
             display:none;
+        }
+        .header__socials{
+            z-index: 2;
+            display: block;
+            margin-right: 20px;
+            filter: brightness(0) saturate(100%) invert(41%) sepia(100%) saturate(5028%) hue-rotate(265deg) brightness(101%) contrast(106%);
+           
+            img{
+                width: 30px
+            }
         }
     }
     @include media.large-phone {
@@ -45,8 +54,14 @@
 /////////////////////////////////////////////////////////////////////////
 .homeSection{
     @include media.phone {
-        img{
+        &__image{
             display:none;
+        }
+        .sideicon{
+            display: none;
+        }
+        .musicwave{
+            display: block;
         }
         h1{
             font-size: 50px;
@@ -58,9 +73,13 @@
 
         a{
             font-size: 18px;
+            margin-top: 20px;
         }
         &__text{
             padding-right: 0px;
+        }
+        .home--scroll{
+            padding-top: 0px;
         }
     }
 
@@ -244,7 +263,7 @@
             gap: 50px;
         }
         img{
-            width: 220px;
+            width: 260px;
             height:180px;
         }
         &__imageGrid{
@@ -515,8 +534,8 @@
 .footer{
 
     @include media.phone {
-        &__right{
-            //font-size: 30px;
+        .footer__right{
+            font-size: 40px;
         }
 
         

@@ -8,6 +8,15 @@
   .header ul {
     display: none;
   }
+  .header .header__socials {
+    z-index: 2;
+    display: block;
+    margin-right: 20px;
+    filter: brightness(0) saturate(100%) invert(41%) sepia(100%) saturate(5028%) hue-rotate(265deg) brightness(101%) contrast(106%);
+  }
+  .header .header__socials img {
+    width: 30px;
+  }
 }
 @media screen and (min-width: 577px) and (max-width: 734px) {
   .header ul {
@@ -16,8 +25,14 @@
   }
 }
 @media screen and (max-width: 576px) {
-  .homeSection img {
+  .homeSection__image {
     display: none;
+  }
+  .homeSection .sideicon {
+    display: none;
+  }
+  .homeSection .musicwave {
+    display: block;
   }
   .homeSection h1 {
     font-size: 50px;
@@ -28,9 +43,13 @@
   }
   .homeSection a {
     font-size: 18px;
+    margin-top: 20px;
   }
   .homeSection__text {
     padding-right: 0px;
+  }
+  .homeSection .home--scroll {
+    padding-top: 0px;
   }
 }
 @media screen and (min-width: 577px) and (max-width: 734px) {
@@ -139,7 +158,7 @@
     gap: 50px;
   }
   .portfolioSection img {
-    width: 220px;
+    width: 260px;
     height: 180px;
   }
   .portfolioSection__imageGrid--projectFour {
@@ -290,6 +309,11 @@
     font-size: 14px;
   }
 }
+@media screen and (max-width: 576px) {
+  .footer .footer__right {
+    font-size: 40px;
+  }
+}
 @media only screen and (min-width: 735px) and (max-width: 768px) {
   .footer {
     padding: 60px;
@@ -356,6 +380,9 @@ main {
 .header__list--link:hover {
   transform: scale(1.15);
 }
+.header__socials {
+  display: none;
+}
 .header__logo {
   font-size: 50px;
   color: #B026FF;
@@ -401,9 +428,32 @@ main {
 }
 .homeSection__scroll {
   color: #B026FF;
-  padding-top: 80px;
+  padding-top: 40px;
   font-size: 22px;
   z-index: 2;
+}
+.homeSection__switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+.homeSection__switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.homeSection .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #1a1a1d;
+  transition: 0.4s;
+  border-radius: 34px;
+  border: 2px solid #B026FF;
 }
 
 .skillsSection {
@@ -417,6 +467,18 @@ main {
   align-items: center;
   gap: 25px;
 }
+.skillsSection .highlight {
+  color: #B026FF;
+  font-family: "Kode Mono", monospace;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 0px;
+}
+.skillsSection .skilldiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .skillsSection__textWrapper {
   display: flex;
   gap: 40px;
@@ -426,7 +488,6 @@ main {
 }
 .skillsSection__img {
   z-index: 2;
-  filter: invert(1) brightness(0.85);
 }
 .skillsSection__img--git {
   grid-area: git;
@@ -546,6 +607,7 @@ main {
   color: #E6E6E6;
   font-family: "Kode Mono", monospace;
   border: 2px solid #B026FF;
+  box-shadow: 0px 0px 10px #B026FF;
   border-radius: 10px;
   padding: 5px;
 }
@@ -559,6 +621,7 @@ main {
   margin: 50px;
   background-color: #1e1e1e;
   border: 3px solid #B026FF;
+  box-shadow: 0px 0px 10px #B026FF;
 }
 .contactSection__contactBox--heading {
   font-family: "Kode Mono", monospace;
@@ -574,6 +637,7 @@ main {
   background-color: #1a1a1d;
   color: #E6E6E6;
   border: 3px solid #B026FF;
+  box-shadow: 0px 0px 10px #B026FF;
   border-radius: 20px;
   font-family: "Kode Mono", monospace;
   font-size: 20px;
@@ -603,6 +667,7 @@ main {
   color: #E6E6E6;
   margin: 20px 50px;
   border: 3px solid #B026FF;
+  box-shadow: 0px 0px 10px #B026FF;
   display: flex;
   justify-content: space-between;
   align-content: center;
@@ -649,8 +714,8 @@ main {
 .star {
   position: absolute;
   background-color: #B026FF;
-  width: 2px;
-  height: 2px;
+  width: 3px;
+  height: 3px;
   border-radius: 50%;
   box-shadow: 0 0 20px rgb(255, 255, 255), 0 0 40px rgba(133, 25, 186, 0.8), 0 0 60px rgba(195, 0, 255, 0.6);
   animation: blink 3s infinite ease-in-out alternate;
@@ -665,6 +730,85 @@ main {
     opacity: 1;
     transform: scale(1);
   }
+}
+.musicSwitch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 36px;
+  margin-top: 20px;
+}
+
+.musicSwitch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #1a1a1d;
+  transition: 0.4s;
+  border-radius: 34px;
+  border: 2px solid #B026FF;
+}
+
+.icon {
+  position: absolute;
+  color: #E6E6E6;
+  font-size: 14px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  line-height: 34px;
+  width: 50%;
+  text-align: center;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.icon-off {
+  left: 1px;
+}
+
+.icon-on {
+  right: 1px;
+  opacity: 0;
+}
+.icon-on img {
+  width: 24px;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 24px;
+  width: 24px;
+  left: 2px;
+  bottom: 2px;
+  background-color: #1a1a1d;
+  border: 2px solid #B026FF;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  box-shadow: 0 0 20px #B026FF;
+}
+
+input:checked + .slider:before {
+  transform: translateX(24px);
+}
+
+input:checked + .slider .icon-off {
+  opacity: 0;
+}
+
+input:checked + .slider .icon-on {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=style.css.map */

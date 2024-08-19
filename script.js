@@ -32,3 +32,25 @@ document.addEventListener("DOMContentLoaded", () => {
         starContainer.appendChild(star);
     }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const music = document.getElementById('backgroundMusic');
+    const toggleSwitch = document.getElementById('toggleMusic');
+    music.volume = 0.4;
+    if (toggleSwitch.checked) {
+        music.muted = false;
+        music.play();
+    }
+    else{
+            music.pause();
+    }
+    toggleSwitch.addEventListener("change", function () {
+        music.muted = false;
+        if (toggleSwitch.checked) {
+            music.play();
+        }
+        else {
+            music.pause();
+        }
+    });
+});

@@ -15,11 +15,16 @@
     <header class="header" id="homeLink">
         <div class="header__logo">DC._</div>
         <ul class="header__list">
-            <li><a class="header__list header__list--link" href="#homeLink">//home</a></li>
-            <li><a class="header__list header__list--link"href="#portfolioLink">//portfolio</a></li>
-            <li><a class="header__list header__list--link"href="#aboutLink">//about</a></li>
-            <li><a class="header__list header__list--link"href="#contactLink">//contact</a></li>
+            <li><a class="header__list header__list--link" href="#homeLink">&lt;/home&gt;</a></li>
+            <li><a class="header__list header__list--link"href="#portfolioLink">&lt;/portfolio&gt;</a></li>
+            <li><a class="header__list header__list--link"href="#aboutLink">&lt;/about&gt;</a></li>
+            <li><a class="header__list header__list--link"href="#contactLink">&lt;/contact&gt;</a></li>
         </ul>
+        <div class="header__socials">
+            <a href="https://github.com/dc703d" target="_blank" rel="noopener noreferrer"><img class="sideicon" src="./media/githublogo.png"></a>
+            <a href="https://www.linkedin.com/in/daim-choudhary-6ba5ab1b5/" target="_blank" rel="noopener noreferrer"><img class="sideicon" src="./media/linkedinlogo.png"></a>
+            <a href="https://silver-catherin-52.tiiny.site" target="_blank" rel="noopener noreferrer"><img class="sideicon" src="./media/cvlogo.png"></a>
+        </div>
     </header>
     
     <main class="mainBody">
@@ -30,14 +35,28 @@
                 <div class="homeSection__scroll" id="home--scroll">
                     <a href="#skillsLink">Scroll Down</a>
                 </div>
+                <audio id="backgroundMusic" loop autoplay muted>
+                    <source src="./media/spaceAudio.mp3">
+                </audio>
+                <label class="homeSection__switch musicSwitch">
+                    <input type="checkbox" id="toggleMusic" checked>
+                    <span class="slider">
+                        <span class="icon icon-off">
+                            X
+                        </span>
+                        <span class="icon icon-on">
+                            <img id="musicwave" src="./media/audioWave.gif"/>
+                        </span>
+                    </span>
+                </label>
             </div>
 
             <img class="homeSection__image" src="./media/avatar2.png">
 
             <div class="homeSection__sidebar">
-                <a href="https://github.com/dc703d" target="_blank" rel="noopener noreferrer"><img src="./media/githublogo.png"></a>
-                <a href="https://www.linkedin.com/in/daim-choudhary-6ba5ab1b5/" target="_blank" rel="noopener noreferrer"><img src="./media/linkedinlogo.png"></a>
-                <a href="https://silver-catherin-52.tiiny.site" target="_blank" rel="noopener noreferrer"><img src="./media/cvlogo.png"></a>
+                <a href="https://github.com/dc703d" target="_blank" rel="noopener noreferrer"><img class="sideicon" src="./media/githublogo.png"></a>
+                <a href="https://www.linkedin.com/in/daim-choudhary-6ba5ab1b5/" target="_blank" rel="noopener noreferrer"><img class="sideicon" src="./media/linkedinlogo.png"></a>
+                <a href="https://silver-catherin-52.tiiny.site" target="_blank" rel="noopener noreferrer"><img class="sideicon" src="./media/cvlogo.png"></a>
             </div>
         </section>
 
@@ -46,16 +65,43 @@
                 <h2 class="skillsSection__heading">SKILLS</h2>
                 <p class="skillsSection__text">Here you'll find the core technologies I use to build innovative and reliable software solutions. You can continue scrolling to find projects demonstrating these skills. </p>
             </div>
-            <div class="skillsSection__imgGrid">
-                <img class="skillsSection__img skillsSection__img--git" src="./media/Skill=Git.svg">
-               <img class="skillsSection__img skillsSection__img--html" src="./media/Skill=HTML5.svg">
-               <img class="skillsSection__img skillsSection__img--css" src="./media/Skill=CSS3.svg">
-               <img class="skillsSection__img skillsSection__img--js" src="./media/Skill=JavaScript.svg">
-               <img class="skillsSection__img skillsSection__img--scss" src="./media/Skill=SCSS.svg">
-               <img class="skillsSection__img skillsSection__img--bem" src="./media/Skill=BEM.svg">
-               <img class="skillsSection__img skillsSection__img--react" src="./media/Skill=React.svg">
-               <img class="skillsSection__img skillsSection__img--java" src="./media/Skill=Java.svg">
-               <img class="skillsSection__img skillsSection__img--spring" src="./media/Skill=Spring Boot.svg">
+            <div class="skillsSection__imgGrid imgGrid">
+                <div class="skilldiv">
+                    <img class="skillsSection__img skillsSection__img--git" src="./media/Skill=Git.svg">
+                    <p class="highlight">GIT</p>
+                </div>
+                <div class="skilldiv">
+                    <img class="skillsSection__img skillsSection__img--html" src="./media/Skill=HTML5.svg">
+                    <p class="highlight">HTML5</p>
+                </div>
+                <div class="skilldiv">
+                    <img class="skillsSection__img skillsSection__img--css" src="./media/Skill=CSS3.svg">
+                    <p class="highlight">CSS3</p>
+                </div>
+                <div class="skilldiv">
+                    <img class="skillsSection__img skillsSection__img--js" src="./media/Skill=JavaScript.svg">
+                    <p class="highlight">JAVASCRIPT</p>
+                </div>
+                <div class="skilldiv">
+                    <img class="skillsSection__img skillsSection__img--scss" src="./media/Skill=SCSS.svg">
+                    <p class="highlight">SCSS</p>
+                </div>
+                <div class="skilldiv">
+                    <img class="skillsSection__img skillsSection__img--bem" src="./media/Skill=BEM.svg">
+                    <p class="highlight">BEM</p>
+                </div>
+                <div class="skilldiv">
+                    <img class="skillsSection__img skillsSection__img--react" src="./media/Skill=React.svg">
+                    <p class="highlight">REACT</p>
+                </div>
+                <div class="skilldiv">
+                    <img class="skillsSection__img skillsSection__img--java" src="./media/Skill=Java.svg">
+                    <p class="highlight">JAVA</p>
+                </div>
+                <div class="skilldiv">
+                    <img class="skillsSection__img skillsSection__img--spring" src="./media/Skill=Spring Boot.svg">
+                    <p class="highlight">SPRINGBOOT</p>
+                </div>
             </div>      
         </section>
 
@@ -150,7 +196,7 @@
                 <p class="contactSection__contactBox--text">Collaboration drives creativity. Whether you have a specific project in mind or just want to explore possibilities, let's discuss how we can work together to bring great ideas to life.
                 </p>
                 <a href="mailto:daim_choudhary@yahoo.co.uk" class= "contactSection__contactBox--button" id="emailbutton">
-                    //get.in.touch
+                    &lt;/get.in.touch&gt;
                 </a>
             </div>
 
