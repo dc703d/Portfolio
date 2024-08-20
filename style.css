@@ -3,6 +3,11 @@
     padding: 55px;
   }
 }
+@media screen and (min-width: 577px) and (max-width: 630px) {
+  .mainBody {
+    padding: 55px;
+  }
+}
 
 @media screen and (max-width: 576px) {
   .header ul {
@@ -18,12 +23,33 @@
     width: 30px;
   }
 }
-@media screen and (min-width: 577px) and (max-width: 734px) {
+@media screen and (min-width: 577px) and (max-width: 630px) {
+  .header ul {
+    padding: 0px 0px;
+    font-size: 12px;
+  }
+  .header li {
+    padding: 0px;
+  }
+}
+@media screen and (min-width: 631px) and (max-width: 734px) {
   .header ul {
     padding: 0px 0px;
     font-size: 14px;
   }
 }
+@media screen and (min-width: 1611px) {
+  .header ul {
+    font-size: 24px;
+  }
+  .header li {
+    padding: 0px 30px;
+  }
+  .header .header__logo {
+    font-size: 60px;
+  }
+}
+
 @media screen and (max-width: 576px) {
   .homeSection__image {
     display: none;
@@ -51,11 +77,53 @@
   .homeSection .home--scroll {
     padding-top: 0px;
   }
+  .homeSection .home--scroll img {
+    width: 70px;
+    position: relative;
+    left: 100%;
+    bottom: 8%;
+  }
+  .homeSection .bottom-bar .downarrow {
+    width: 50px;
+    top: 20%;
+  }
 }
-@media screen and (min-width: 577px) and (max-width: 734px) {
+@media screen and (min-width: 577px) and (max-width: 630px) {
+  .homeSection__image {
+    display: none;
+  }
+  .homeSection .sideicon {
+    display: none;
+  }
+  .homeSection .musicwave {
+    display: block;
+  }
+  .homeSection h1 {
+    font-size: 50px;
+    width: 200px;
+  }
+  .homeSection p {
+    text-align: end;
+  }
+  .homeSection a {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  .homeSection__text {
+    padding-right: 0px;
+  }
+  .homeSection .home--scroll {
+    padding-top: 0px;
+  }
+  .homeSection .bottom-bar .downarrow {
+    width: 50px;
+    top: 20%;
+  }
+}
+@media screen and (min-width: 631px) and (max-width: 734px) {
   .homeSection img {
-    max-width: 200px;
-    max-height: 200px;
+    max-width: 250px;
+    max-height: 250px;
   }
   .homeSection__text {
     font-size: 12px;
@@ -66,11 +134,15 @@
   .homeSection__scroll {
     padding-top: 50px;
   }
+  .homeSection .bottom-bar .downarrow {
+    width: 50px;
+    top: 20%;
+  }
 }
 @media only screen and (min-width: 735px) and (max-width: 768px) {
   .homeSection img {
-    max-width: 250px;
-    max-height: 250px;
+    max-width: 300px;
+    max-height: 300px;
   }
   .homeSection__text {
     font-size: 12px;
@@ -79,11 +151,15 @@
   .homeSection h1 {
     font-size: 28px;
   }
+  .homeSection .bottom-bar .downarrow {
+    width: 50px;
+    top: 20%;
+  }
 }
 @media screen and (min-width: 769px) and (max-width: 992px) {
   .homeSection img {
-    max-width: 250px;
-    max-height: 250px;
+    max-width: 300px;
+    max-height: 300px;
   }
   .homeSection__text {
     font-size: 12px;
@@ -95,6 +171,10 @@
   .homeSection__scroll {
     padding-top: 50px;
     font-size: 10px;
+  }
+  .homeSection .bottom-bar .downarrow {
+    width: 50px;
+    top: 20%;
   }
 }
 @media screen and (min-width: 993px) and (max-width: 1348px) {
@@ -113,7 +193,38 @@
     padding-top: 50px;
   }
 }
+@media screen and (min-width: 1611px) {
+  .homeSection h1 {
+    font-size: 62px;
+  }
+  .homeSection__text {
+    font-size: 22px;
+  }
+}
+
 @media screen and (max-width: 576px) {
+  .skillsSection__heading {
+    font-size: 24px;
+  }
+  .skillsSection h2 {
+    margin: 0px;
+  }
+  .skillsSection__text {
+    font-size: 11px;
+    line-height: 150%;
+    text-align: justify;
+    margin: 0px;
+  }
+  .skillsSection img {
+    width: 60px;
+    height: 100px;
+  }
+  .skillsSection__textWrapper {
+    flex-direction: column;
+    gap: 0px;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 630px) {
   .skillsSection__heading {
     font-size: 24px;
   }
@@ -144,6 +255,19 @@
     line-height: 150%;
   }
 }
+@media screen and (min-width: 1611px) {
+  .skillsSection__heading {
+    font-size: 28px;
+  }
+  .skillsSection .highlight {
+    font-size: 20px;
+  }
+  .skillsSection__text {
+    font-size: 20px;
+    line-height: 200%;
+  }
+}
+
 @media screen and (max-width: 576px) {
   .portfolioSection__heading {
     font-size: 24px;
@@ -156,6 +280,10 @@
     grid-template-columns: repeat(1, 1fr);
     grid-template-areas: "One" "Two" "Three";
     gap: 50px;
+  }
+  .portfolioSection .viewingEye {
+    height: 15px;
+    filter: invert(1);
   }
   .portfolioSection img {
     width: 260px;
@@ -170,8 +298,15 @@
   .portfolioSection__imageGrid--projectSix {
     display: none;
   }
+  .portfolioSection .content {
+    height: 68%;
+    font-size: 10px;
+  }
+  .portfolioSection .content p {
+    margin: 45px 15px 15px 15px;
+  }
 }
-@media screen and (min-width: 577px) and (max-width: 734px) {
+@media screen and (min-width: 577px) and (max-width: 630px) {
   .portfolioSection__heading {
     font-size: 20px;
   }
@@ -182,9 +317,47 @@
     grid-template-areas: "One Two" "Three Four";
     gap: 30px;
   }
+  .portfolioSection .viewingEye {
+    height: 15px;
+    filter: invert(1);
+  }
   .portfolioSection img {
     width: 180px;
     height: 120px;
+  }
+  .portfolioSection .content {
+    height: 59%;
+    font-size: 8px;
+  }
+  .portfolioSection .content p {
+    margin: 25px 15px 15px 15px;
+  }
+}
+@media screen and (min-width: 631px) and (max-width: 734px) {
+  .portfolioSection__heading {
+    font-size: 20px;
+  }
+  .portfolioSection .imageGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "One Two" "Three Four";
+    gap: 30px;
+  }
+  .portfolioSection .viewingEye {
+    height: 15px;
+    filter: invert(1);
+  }
+  .portfolioSection img {
+    width: 180px;
+    height: 120px;
+  }
+  .portfolioSection .content {
+    height: 59%;
+    font-size: 8px;
+  }
+  .portfolioSection .content p {
+    margin: 25px 15px 15px 15px;
   }
 }
 @media only screen and (min-width: 735px) and (max-width: 768px) {
@@ -198,9 +371,20 @@
     grid-template-areas: "One Two" "Three Four";
     gap: 50px;
   }
+  .portfolioSection .viewingEye {
+    height: 15px;
+    filter: invert(1);
+  }
   .portfolioSection img {
     width: 260px;
     height: 170px;
+  }
+  .portfolioSection .content {
+    height: 67%;
+    font-size: 12px;
+  }
+  .portfolioSection .content p {
+    margin: 25px 15px 15px 15px;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 992px) {
@@ -211,9 +395,20 @@
     grid-template-areas: "One Two" "Three Four";
     gap: 50px;
   }
+  .portfolioSection .viewingEye {
+    height: 15px;
+    filter: invert(1);
+  }
   .portfolioSection img {
     width: 260px;
     height: 170px;
+  }
+  .portfolioSection .content {
+    height: 67%;
+    font-size: 12px;
+  }
+  .portfolioSection .content p {
+    margin: 25px 15px 15px 15px;
   }
 }
 @media screen and (min-width: 993px) and (max-width: 1348px) {
@@ -224,12 +419,70 @@
     grid-template-areas: "One Two" "Three Four";
     gap: 50px;
   }
+  .portfolioSection .viewingEye {
+    height: 15px;
+    filter: invert(1);
+  }
   .portfolioSection img {
     width: 380px;
     height: 270px;
   }
+  .portfolioSection .content {
+    height: 77%;
+    font-size: 16px;
+  }
+  .portfolioSection .content p {
+    margin: 35px 15px 15px 15px;
+  }
 }
+@media screen and (min-width: 1611px) {
+  .portfolioSection__heading {
+    font-size: 28px;
+  }
+  .portfolioSection .viewingEye {
+    height: 15px;
+    filter: invert(1);
+  }
+  .portfolioSection img {
+    width: 420px;
+    height: 300px;
+  }
+  .portfolioSection__text {
+    font-size: 22px;
+  }
+  .portfolioSection__buttons {
+    padding-top: 20px;
+  }
+  .portfolioSection__buttons a {
+    font-size: 16px;
+    text-align: center;
+  }
+  .portfolioSection .content {
+    height: 72%;
+    font-size: 18px;
+  }
+  .portfolioSection .content p {
+    margin: 45px 15px 15px 15px;
+  }
+}
+
 @media screen and (max-width: 576px) {
+  .contactSection div {
+    padding: 40px;
+    margin: 0px;
+  }
+  .contactSection__contactBox--heading {
+    font-size: 20px;
+    text-align: center;
+  }
+  .contactSection__contactBox--text {
+    font-size: 12px;
+  }
+  .contactSection__contactBox a {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 630px) {
   .contactSection div {
     padding: 40px;
     margin: 0px;
@@ -264,6 +517,19 @@
     font-size: 14px;
   }
 }
+@media screen and (min-width: 1611px) {
+  .contactSection__contactBox--heading {
+    font-size: 28px;
+    text-align: center;
+  }
+  .contactSection__contactBox--text {
+    font-size: 20px;
+  }
+  .contactSection__contactBox a {
+    font-size: 20px;
+  }
+}
+
 @media screen and (max-width: 576px) {
   .aboutSection h2 {
     font-size: 24px;
@@ -290,49 +556,148 @@
     margin: 0px;
   }
 }
-@media only screen and (min-width: 735px) and (max-width: 768px) {
-  .aboutSection {
-    padding: 60px;
+@media screen and (min-width: 577px) and (max-width: 630px) {
+  .aboutSection h2 {
+    font-size: 24px;
   }
-  .aboutSection div {
-    padding: 40px 50px;
-    margin: 20px;
+  .aboutSection button {
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 20px;
   }
-  .aboutSection__contactBox {
-    padding: 30px 75px;
+  .aboutSection button--para {
+    display: none;
+    font-size: 12px;
+  }
+  .aboutSection button h3 {
+    font-size: 12px;
+    text-align: center;
+    align-self: center;
+  }
+  .aboutSection ul {
+    font-size: 10px;
     margin: 0px;
   }
-  .aboutSection__contactBox--heading {
-    font-size: 22px;
+}
+@media screen and (min-width: 631px) and (max-width: 734px) {
+  .aboutSection h2 {
+    font-size: 24px;
   }
-  .aboutSection__contactBox--text {
-    font-size: 14px;
+  .aboutSection button {
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 20px;
+  }
+  .aboutSection button--para {
+    display: none;
+    font-size: 12px;
+  }
+  .aboutSection button h3 {
+    font-size: 12px;
+    text-align: center;
+    align-self: center;
+  }
+  .aboutSection ul {
+    font-size: 10px;
+    margin: 0px;
   }
 }
+@media only screen and (min-width: 735px) and (max-width: 768px) {
+  .aboutSection h2 {
+    font-size: 24px;
+  }
+  .aboutSection button {
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 20px;
+  }
+  .aboutSection button--para {
+    display: none;
+    font-size: 12px;
+  }
+  .aboutSection button h3 {
+    font-size: 12px;
+    text-align: center;
+    align-self: center;
+  }
+  .aboutSection ul {
+    font-size: 10px;
+    margin: 0px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .aboutSection h2 {
+    font-size: 24px;
+  }
+  .aboutSection button {
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 20px;
+  }
+  .aboutSection button--para {
+    display: none;
+    font-size: 12px;
+  }
+  .aboutSection button h3 {
+    font-size: 12px;
+    text-align: center;
+    align-self: center;
+  }
+  .aboutSection ul {
+    font-size: 10px;
+    margin: 0px;
+  }
+}
+@media screen and (min-width: 1611px) {
+  .aboutSection h2 {
+    font-size: 28px;
+  }
+  .aboutSection button--para {
+    display: none;
+    font-size: 14px;
+  }
+  .aboutSection button h3 {
+    font-size: 22px;
+    text-align: center;
+    align-self: center;
+  }
+  .aboutSection ul {
+    font-size: 18px;
+    margin: 20px 100px;
+  }
+}
+
 @media screen and (max-width: 576px) {
   .footer .footer__right {
     font-size: 40px;
   }
 }
-@media only screen and (min-width: 735px) and (max-width: 768px) {
-  .footer {
-    padding: 60px;
-  }
-  .footer div {
-    padding: 40px 50px;
-    margin: 20px;
-  }
-  .footer__contactBox {
-    padding: 30px 75px;
-    margin: 0px;
-  }
-  .footer__contactBox--heading {
-    font-size: 22px;
-  }
-  .footer__contactBox--text {
-    font-size: 14px;
+@media screen and (min-width: 577px) and (max-width: 630px) {
+  .footer .footer__right {
+    font-size: 40px;
   }
 }
+@media screen and (min-width: 1611px) {
+  .footer .footer__right {
+    font-size: 80px;
+  }
+  .footer .footer__left {
+    font-size: 30px;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -426,11 +791,29 @@ main {
   align-content: center;
   z-index: 2;
 }
+.homeSection__wrapper {
+  display: flex;
+}
+.homeSection .bottom-bar {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+}
+.homeSection .downarrow {
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  transform: translateX(-50%);
+}
 .homeSection__scroll {
   color: #B026FF;
-  padding-top: 40px;
   font-size: 22px;
+  width: 100%;
   z-index: 2;
+}
+.homeSection__scroll img {
+  width: 60px;
 }
 .homeSection__switch {
   position: relative;
@@ -559,10 +942,9 @@ main {
 .portfolioSection__image {
   z-index: 2;
   margin: auto;
+  position: relative;
 }
 .portfolioSection__image--projectOne {
-  display: flex;
-  flex-direction: column;
   grid-area: One;
   align-self: center;
   justify-self: center;
@@ -592,6 +974,28 @@ main {
   align-self: center;
   justify-self: center;
 }
+.portfolioSection__image--content {
+  width: 100%;
+  height: 76%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  opacity: 0;
+  transition: 0.6s;
+  text-align: center;
+  font-family: "Kode Mono", monospace;
+  font-size: 14px;
+}
+.portfolioSection__image--content p {
+  margin: 45px 15px 15px 15px;
+}
+.portfolioSection__image--content:hover {
+  opacity: 1;
+}
 .portfolioSection__text {
   font-family: "Kode Mono", monospace;
   padding-top: 10px;
@@ -604,12 +1008,19 @@ main {
   margin: 10px 0px;
 }
 .portfolioSection__buttons a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
   color: #E6E6E6;
   font-family: "Kode Mono", monospace;
   border: 2px solid #B026FF;
   box-shadow: 0px 0px 10px #B026FF;
   border-radius: 10px;
   padding: 5px;
+}
+.portfolioSection__buttons .viewingEye {
+  width: 16px;
+  filter: invert(1);
 }
 
 .contactSection__contactBox {

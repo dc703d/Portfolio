@@ -30,28 +30,38 @@
     <main class="mainBody">
         <section class="homeSection">
             <div class="homeSection__text">
-                <h1 class="homeSection__title">I'm a<br/><span class="homeSection__title--colouredText">Junior Software Developer</span></h1>
-                <p class="homeSection__title--para">Hi there. I'm Daim and I specialise in creating innovative software to build impactful solutions. Welcome to my digital portfolio, where you can have a look at who I am and what I do.</p>
-                <div class="homeSection__scroll" id="home--scroll">
-                    <a href="#skillsLink">Scroll Down</a>
-                </div>
-                <audio id="backgroundMusic" loop autoplay muted>
-                    <source src="./media/spaceAudio.mp3">
-                </audio>
-                <label class="homeSection__switch musicSwitch">
-                    <input type="checkbox" id="toggleMusic" checked>
-                    <span class="slider">
-                        <span class="icon icon-off">
-                            X
-                        </span>
-                        <span class="icon icon-on">
-                            <img id="musicwave" src="./media/audioWave.gif"/>
-                        </span>
-                    </span>
-                </label>
+                    <div class="homeSection__wrapper">
+                        <div>
+                            <h1 class="homeSection__title">I'm a<br/><span class="homeSection__title--colouredText">Junior Software Developer</span></h1>
+                            <p class="homeSection__title--para">Hi there. I'm Daim and I specialise in creating innovative software to build impactful solutions. Welcome to my digital portfolio, where you can have a look at who I am and what I do.</p>
+                        </div>
+                        <div>
+                            <img class="homeSection__image" src="./media/sittingAvatar.svg">
+                        </div>
+                    </div>
+                    <div class="homeSection__scroll" id="home--scroll">
+                        <div class="bottom-bar">
+                            <audio id="backgroundMusic" loop autoplay muted>
+                                <source src="./media/spaceAudio.mp3">
+                            </audio>
+                            <label class="homeSection__switch musicSwitch">
+                                <input type="checkbox" id="toggleMusic" checked>
+                                <span class="slider">
+                                    <span class="icon icon-off">
+                                        X
+                                    </span>
+                                    <span class="icon icon-on">
+                                        <img id="musicwave" src="./media/audioWave.gif"/>
+                                    </span>
+                                </span>
+                            </label>
+
+                            <a href="#skillsLink"><img class="downarrow" src="./media/down-arrow2.gif"></a>
+                        </div>
+                    </div>
             </div>
 
-            <img class="homeSection__image" src="./media/avatar2.png">
+            
 
             <div class="homeSection__sidebar">
                 <a href="https://github.com/dc703d" target="_blank" rel="noopener noreferrer"><img class="sideicon" src="./media/githublogo.png"></a>
@@ -114,50 +124,68 @@
             <div class="imageGrid portfolioSection__imageGrid">
                 <div class="portfolioSection__image portfolioSection__imageGrid--projectOne">
                     <img src="./media/clientProject1.png">
+                    <div class="portfolioSection__image--content content">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque qui eaque placeat aliquam laborum quod hic fuga vero nihil, et omnis vel velit soluta cupiditate ducimus magnam, ipsa culpa quas.</p>
+                    </div>
                     <div class="portfolioSection__text">Project 1</div> 
                     <div class="portfolioSection__buttons">
                         <a href="">Code&lt;/&gt;</a>    
-                        <a href="">Preview</a> 
+                        <a href="">Preview <img class="viewingEye" src="./media/view.png"></a> 
                     </div>
                 </div>
                 <div class="portfolioSection__image portfolioSection__imageGrid--projectTwo">
                     <img src="./media/clientProject2.png">
+                    <div class="portfolioSection__image--content content">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque qui eaque placeat aliquam laborum quod hic fuga vero nihil, et omnis vel velit soluta cupiditate ducimus magnam, ipsa culpa quas.</p>
+                    </div>
                     <div class="portfolioSection__text">Project 2</div>
                     <div class="portfolioSection__buttons">
                         <a href="">Code&lt;/&gt;</a>    
-                        <a href="">Preview</a> 
+                        <a href="">Preview <img class="viewingEye" src="./media/view.png"></a> 
                     </div>
                 </div>
                 <div class="portfolioSection__image portfolioSection__imageGrid--projectThree">
                     <img src="./media/clientProject1.png">
+                    <div class="portfolioSection__image--content content">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque qui eaque placeat aliquam laborum quod hic fuga vero nihil, et omnis vel velit soluta cupiditate ducimus magnam, ipsa culpa quas.</p>
+                    </div>
                     <div class="portfolioSection__text">Project 3</div>
                     <div class="portfolioSection__buttons">
                         <a href="">Code&lt;/&gt;</a>    
-                        <a href="">Preview</a> 
+                        <a href="">Preview <img class="viewingEye" src="./media/view.png"></a> 
                     </div>
                 </div>
                 <div class="portfolioSection__image portfolioSection__imageGrid--projectFour">
                     <img src="./media/clientProject2.png">
+                    <div class="portfolioSection__image--content content">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque qui eaque placeat aliquam laborum quod hic fuga vero nihil, et omnis vel velit soluta cupiditate ducimus magnam, ipsa culpa quas.</p>
+                    </div>
                     <div class="portfolioSection__text">Project 4</div>
                     <div class="portfolioSection__buttons">
                         <a href="">Code&lt;/&gt;</a>    
-                        <a href="">Preview</a> 
+                        <a href="">Preview <img class="viewingEye" src="./media/view.png"></a> 
                     </div>
                 </div>
                 <div class="portfolioSection__image portfolioSection__imageGrid--projectFive">
                     <img src="./media/clientProject1.png">
+                    <div class="portfolioSection__image--content content">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque qui eaque placeat aliquam laborum quod hic fuga vero nihil, et omnis vel velit soluta cupiditate ducimus magnam, ipsa culpa quas.</p>
+                    </div>
                     <div class="portfolioSection__text">Project 5</div>
                     <div class="portfolioSection__buttons">
                         <a href="">Code&lt;/&gt;</a>    
-                        <a href="">Preview</a> 
+                        <a href="">Preview <img class="viewingEye" src="./media/view.png"></a> 
                     </div>
                 </div>
                 <div class="portfolioSection__image portfolioSection__imageGrid--projectSix">
                     <img src="./media/clientProject2.png">
+                    <div class="portfolioSection__image--content content">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque qui eaque placeat aliquam laborum quod hic fuga vero nihil, et omnis vel velit soluta cupiditate ducimus magnam, ipsa culpa quas.</p>
+                    </div>
                     <div class="portfolioSection__text">Project 6</div>
                     <div class="portfolioSection__buttons">
                         <a href="">Code&lt;/&gt;</a>    
-                        <a href="">Preview</a> 
+                        <a href="">Preview <img class="viewingEye" src="./media/view.png"></a> 
                     </div>
                 </div>
             </div>
