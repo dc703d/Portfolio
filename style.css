@@ -710,11 +710,11 @@ body {
 
 a {
   text-decoration: none;
-  color: #B026FF;
+  color: #b026ff;
 }
 
 main {
-  color: #E6E6E6;
+  color: #e6e6e6;
   background-color: #1a1a1d;
   padding: 80px;
 }
@@ -739,7 +739,7 @@ main {
 }
 .header__list--link {
   text-decoration: none;
-  color: #E6E6E6;
+  color: #e6e6e6;
   transition: 0.3s;
 }
 .header__list--link:hover {
@@ -750,7 +750,7 @@ main {
 }
 .header__logo {
   font-size: 50px;
-  color: #B026FF;
+  color: #b026ff;
   padding: 0px 50px;
   z-index: 2;
 }
@@ -770,7 +770,7 @@ main {
   line-height: 150%;
 }
 .homeSection__title--colouredText {
-  color: #B026FF;
+  color: #b026ff;
 }
 .homeSection__image {
   max-width: 450px;
@@ -778,7 +778,7 @@ main {
   z-index: 2;
 }
 .homeSection__sidebar {
-  background-color: #B026FF;
+  background-color: #b026ff;
   position: fixed;
   right: 0;
   top: 15%;
@@ -807,7 +807,7 @@ main {
   transform: translateX(-50%);
 }
 .homeSection__scroll {
-  color: #B026FF;
+  color: #b026ff;
   font-size: 22px;
   width: 100%;
   z-index: 2;
@@ -836,7 +836,7 @@ main {
   background-color: #1a1a1d;
   transition: 0.4s;
   border-radius: 34px;
-  border: 2px solid #B026FF;
+  border: 2px solid #b026ff;
 }
 
 .skillsSection {
@@ -851,7 +851,7 @@ main {
   gap: 25px;
 }
 .skillsSection .highlight {
-  color: #B026FF;
+  color: #b026ff;
   font-family: "Kode Mono", monospace;
   font-weight: bold;
   text-align: center;
@@ -930,7 +930,7 @@ main {
   line-height: 200%;
 }
 .portfolioSection__heading--work {
-  color: #B026FF;
+  color: #b026ff;
   font-size: 28px;
 }
 .portfolioSection__imageGrid {
@@ -976,7 +976,7 @@ main {
 }
 .portfolioSection__image--content {
   width: 100%;
-  height: 76%;
+  height: 74%;
   top: 0;
   left: 0;
   position: absolute;
@@ -992,9 +992,14 @@ main {
 }
 .portfolioSection__image--content p {
   margin: 45px 15px 15px 15px;
+  line-height: 150%;
 }
 .portfolioSection__image--content:hover {
   opacity: 1;
+}
+.portfolioSection__image--display {
+  width: 345px;
+  height: 240px;
 }
 .portfolioSection__text {
   font-family: "Kode Mono", monospace;
@@ -1002,7 +1007,7 @@ main {
 }
 .portfolioSection__buttons {
   font-size: 11px;
-  color: #E6E6E6;
+  color: #e6e6e6;
   display: flex;
   gap: 10px;
   margin: 10px 0px;
@@ -1011,10 +1016,10 @@ main {
   display: flex;
   align-items: center;
   gap: 5px;
-  color: #E6E6E6;
+  color: #e6e6e6;
   font-family: "Kode Mono", monospace;
-  border: 2px solid #B026FF;
-  box-shadow: 0px 0px 10px #B026FF;
+  border: 2px solid #b026ff;
+  box-shadow: 0px 0px 10px #b026ff;
   border-radius: 10px;
   padding: 5px;
 }
@@ -1031,8 +1036,8 @@ main {
   padding: 50px 100px;
   margin: 50px;
   background-color: #1e1e1e;
-  border: 3px solid #B026FF;
-  box-shadow: 0px 0px 10px #B026FF;
+  border: 3px solid #b026ff;
+  box-shadow: 0px 0px 10px #b026ff;
 }
 .contactSection__contactBox--heading {
   font-family: "Kode Mono", monospace;
@@ -1046,9 +1051,9 @@ main {
 .contactSection__contactBox--button {
   z-index: 2;
   background-color: #1a1a1d;
-  color: #E6E6E6;
-  border: 3px solid #B026FF;
-  box-shadow: 0px 0px 10px #B026FF;
+  color: #e6e6e6;
+  border: 3px solid #b026ff;
+  box-shadow: 0px 0px 10px #b026ff;
   border-radius: 20px;
   font-family: "Kode Mono", monospace;
   font-size: 20px;
@@ -1075,10 +1080,10 @@ main {
   z-index: 2;
   background-color: #1a1a1d;
   font-family: "Kode Mono", monospace;
-  color: #E6E6E6;
+  color: #e6e6e6;
   margin: 20px 50px;
-  border: 3px solid #B026FF;
-  box-shadow: 0px 0px 10px #B026FF;
+  border: 3px solid #b026ff;
+  box-shadow: 0px 0px 10px #b026ff;
   display: flex;
   justify-content: space-between;
   align-content: center;
@@ -1102,7 +1107,7 @@ main {
   justify-content: space-between;
   align-items: center;
   font-family: "VT323", monospace;
-  background-color: #B026FF;
+  background-color: #b026ff;
 }
 .footer__right {
   font-size: 50px;
@@ -1124,7 +1129,7 @@ main {
 
 .star {
   position: absolute;
-  background-color: #B026FF;
+  background-color: #b026ff;
   width: 3px;
   height: 3px;
   border-radius: 50%;
@@ -1166,12 +1171,12 @@ main {
   background-color: #1a1a1d;
   transition: 0.4s;
   border-radius: 34px;
-  border: 2px solid #B026FF;
+  border: 2px solid #b026ff;
 }
 
 .icon {
   position: absolute;
-  color: #E6E6E6;
+  color: #e6e6e6;
   font-size: 14px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   line-height: 34px;
@@ -1201,13 +1206,13 @@ main {
   left: 2px;
   bottom: 2px;
   background-color: #1a1a1d;
-  border: 2px solid #B026FF;
+  border: 2px solid #b026ff;
   transition: 0.4s;
   border-radius: 50%;
 }
 
 input:checked + .slider {
-  box-shadow: 0 0 20px #B026FF;
+  box-shadow: 0 0 20px #b026ff;
 }
 
 input:checked + .slider:before {

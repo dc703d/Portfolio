@@ -1,30 +1,30 @@
-@import './gallery.scss';
+@import "./gallery.scss";
 
 $backgroundColor: #1a1a1d;
-$primaryText: #E6E6E6;
-$purpleNeon: #B026FF;
+$primaryText: #e6e6e6;
+$purpleNeon: #b026ff;
 $font1: "Kode Mono", monospace;
 $font2: "VT323", monospace;
-$secondaryColour:#1e1e1e;
+$secondaryColour: #1e1e1e;
 
-html{
-    scroll-behavior:smooth;
+html {
+    scroll-behavior: smooth;
 }
-body{
+body {
     margin: 0px;
     padding: 0px;
     cursor: url("./media/cursor.cur") 25 15, crosshair;
 }
-a{
+a {
     text-decoration: none;
     color: $purpleNeon;
 }
-main{
+main {
     color: $primaryText;
     background-color: $backgroundColor;
     padding: 80px;
 }
-.header{
+.header {
     background-color: $backgroundColor;
     margin: 0px;
     font-family: $font2;
@@ -35,52 +35,52 @@ main{
     justify-content: space-between;
     align-items: center;
     padding: 10px 0px;
-    &__list{
+    &__list {
         list-style-type: none;
         display: flex;
         padding: 0px 30px;
         z-index: 2;
-        &--link{
+        &--link {
             text-decoration: none;
             color: $primaryText;
             transition: 0.3s;
-        } 
-        &--link:hover{
+        }
+        &--link:hover {
             transform: scale(1.15);
         }
     }
-    &__socials{
+    &__socials {
         display: none;
     }
-    &__logo{
+    &__logo {
         font-size: 50px;
         color: $purpleNeon;
         padding: 0px 50px;
         z-index: 2;
     }
 }
-.homeSection{
+.homeSection {
     background-color: $backgroundColor;
     display: flex;
     justify-content: space-around;
-    &__text{
+    &__text {
         font-family: $font1;
         line-height: 200%;
         z-index: 2;
     }
-    &__title{
+    &__title {
         font-size: 50px;
         line-height: 150%;
-        &--colouredText{
+        &--colouredText {
             color: $purpleNeon;
         }
     }
-    &__image{
+    &__image {
         max-width: 450px;
-        max-height:450px;
+        max-height: 450px;
         z-index: 2;
     }
-    &__sidebar{
+    &__sidebar {
         background-color: $purpleNeon;
         position: fixed;
         right: 0;
@@ -92,44 +92,45 @@ main{
         gap: 10px;
         justify-content: center;
         align-content: center;
-        z-index: 2;   
+        z-index: 2;
     }
-    &__wrapper{
+    &__wrapper {
         display: flex;
     }
-    .bottom-bar{
+    .bottom-bar {
         display: flex;
         position: relative;
         justify-content: space-between;
         align-items: center;
     }
-    .downarrow{
+    .downarrow {
         position: absolute;
         left: 50%;
         top: 10%;
         transform: translateX(-50%);
+        //scroll-behavior: smooth;
     }
-    &__scroll{
+    &__scroll {
         color: $purpleNeon;
         font-size: 22px;
         width: 100%;
-        z-index: 2; 
-        img{
-            width:60px; 
+        z-index: 2;
+        img {
+            width: 60px;
         }
     }
-    &__switch{
+    &__switch {
         position: relative;
         display: inline-block;
         width: 60px;
         height: 34px;
     }
-    &__switch input{
+    &__switch input {
         opacity: 0;
         width: 0;
         height: 0;
     }
-    .slider{
+    .slider {
         position: absolute;
         cursor: pointer;
         top: 0;
@@ -137,155 +138,155 @@ main{
         right: 0;
         bottom: 0;
         background-color: $backgroundColor;
-        transition: .4s;
+        transition: 0.4s;
         border-radius: 34px;
         border: 2px solid $purpleNeon;
     }
 }
 
-.skillsSection{
+.skillsSection {
     background-color: $backgroundColor;
     padding: 80px 0px;
-    &__imgGrid{
+    &__imgGrid {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
         align-items: center;
-        gap:25px;
+        gap: 25px;
     }
-    .highlight{
+    .highlight {
         color: $purpleNeon;
         font-family: $font1;
         font-weight: bold;
         text-align: center;
         margin-top: 0px;
     }
-    .skilldiv{
+    .skilldiv {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        
     }
-    &__textWrapper{
+    &__textWrapper {
         display: flex;
         gap: 40px;
         font-family: $font1;
         padding-bottom: 50px;
         line-height: 200%;
     }
-    &__img{
+    &__img {
         z-index: 2;
-        &--git{
+        &--git {
             grid-area: git;
             place-self: center;
             font-family: $font1;
         }
-        &--html{
+        &--html {
             grid-area: html;
             place-self: center;
             font-family: $font1;
         }
-        &--css{
+        &--css {
             grid-area: css;
             place-self: center;
             font-family: $font1;
         }
-        &--js{
+        &--js {
             grid-area: js;
             place-self: center;
             font-family: $font1;
         }
-        &--scss{
+        &--scss {
             grid-area: scss;
             place-self: center;
             font-family: $font1;
         }
-        &--bem{
+        &--bem {
             grid-area: bem;
             place-self: center;
             font-family: $font1;
         }
-        &--react{
+        &--react {
             grid-area: react;
             place-self: center;
             font-family: $font1;
         }
-        &--java{
+        &--java {
             grid-area: java;
             place-self: center;
             font-family: $font1;
         }
-        &--spring{
+        &--spring {
             grid-area: spring;
             place-self: center;
             font-family: $font1;
         }
     }
 }
-.portfolioSection{
+.portfolioSection {
     background-color: $backgroundColor;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 80px;
 
-    &__heading{
+    &__heading {
         font-family: $font1;
         line-height: 200%;
-        &--work{
+        &--work {
             color: $purpleNeon;
             font-size: 28px;
         }
     }
-    &__imageGrid{
-    display:grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-areas: 'One Two Three'
-                         'Four Five Six';
-    gap: 80px;
+    &__imageGrid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "One Two Three"
+            "Four Five Six";
+        gap: 80px;
     }
-    &__image{
+    &__image {
         z-index: 2;
-        margin:auto;
+        margin: auto;
         position: relative;
 
-        &--projectOne{
+        &--projectOne {
             grid-area: One;
             align-self: center;
-            justify-self: center;  
+            justify-self: center;
         }
-        &--projectTwo{
+        &--projectTwo {
             grid-area: Two;
             align-self: center;
             justify-self: center;
         }
-        &--projectThree{
+        &--projectThree {
             grid-area: Three;
             align-self: center;
             justify-self: center;
         }
-        &--projectFour{
+        &--projectFour {
             grid-area: Four;
             align-self: center;
             justify-self: center;
         }
-        &--projectFive{
+        &--projectFive {
             grid-area: Five;
             align-self: center;
             justify-self: center;
         }
-        &--projectSix{
+        &--projectSix {
             grid-area: Six;
             align-self: center;
             justify-self: center;
         }
-        &--content{
+        &--content {
             width: 100%;
-            height: 76%;
+            height: 74%;
             top: 0;
             left: 0;
             position: absolute;
-            background-color: rgba(0,0,0,0.7);
+            background-color: rgba(0, 0, 0, 0.7);
             display: flex;
             justify-content: flex-start;
             flex-direction: column;
@@ -294,25 +295,30 @@ main{
             text-align: center;
             font-family: $font1;
             font-size: 14px;
-            p{
+            p {
                 margin: 45px 15px 15px 15px;
+                line-height: 150%;
             }
         }
-        &--content:hover{
+        &--content:hover {
             opacity: 1;
         }
+        &--display {
+            width: 345px;
+            height: 240px;
+        }
     }
-    &__text{
+    &__text {
         font-family: $font1;
         padding-top: 10px;
     }
-    &__buttons{
+    &__buttons {
         font-size: 11px;
         color: $primaryText;
         display: flex;
         gap: 10px;
         margin: 10px 0px;
-        a{
+        a {
             display: flex;
             align-items: center;
             gap: 5px;
@@ -323,15 +329,15 @@ main{
             border-radius: 10px;
             padding: 5px;
         }
-        .viewingEye{
+        .viewingEye {
             width: 16px;
             filter: invert(1);
         }
     }
 }
 
-.contactSection{
-    &__contactBox{
+.contactSection {
+    &__contactBox {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -342,18 +348,18 @@ main{
         border: 3px solid $purpleNeon;
         box-shadow: 0px 0px 10px $purpleNeon;
 
-        &--heading{
+        &--heading {
             font-family: $font1;
         }
 
-        &--text{
+        &--text {
             font-family: $font1;
             line-height: 200%;
             padding-bottom: 20px;
             text-align: center;
         }
 
-        &--button{
+        &--button {
             z-index: 2;
             background-color: $backgroundColor;
             color: $primaryText;
@@ -366,23 +372,23 @@ main{
             cursor: pointer;
             transition: all 0.3s;
         }
-        &--button:hover{
-            transform: scale(1.10);
+        &--button:hover {
+            transform: scale(1.1);
         }
     }
 }
 
-.aboutSection{
+.aboutSection {
     background-color: $backgroundColor;
     padding: 80px 0px;
     font-family: $font1;
     line-height: 200%;
     display: flex;
     flex-direction: column;
-    &__heading{
+    &__heading {
         margin-bottom: 60px;
     }
-    &__button{
+    &__button {
         z-index: 2;
         background-color: $backgroundColor;
         font-family: $font1;
@@ -395,77 +401,78 @@ main{
         align-content: center;
         padding: 20px;
         border-radius: 20px;
-        transition: ease-in-out .3s;
-        &--list{
+        transition: ease-in-out 0.3s;
+        &--list {
             margin: 0px 80px;
             list-style-type: "> ";
         }
-        &--para{
+        &--para {
             display: none;
         }
     }
-    &__button:hover{
+    &__button:hover {
         transform: scale(1.02);
     }
 }
-.footer{
+.footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
     font-family: $font2;
     background-color: $purpleNeon;
-    &__right{
+    &__right {
         font-size: 50px;
         color: $backgroundColor;
         padding: 10px 50px;
     }
-    &__left{
+    &__left {
         color: $backgroundColor;
         padding: 0px 50px;
     }
 }
-.stars{
+.stars {
     position: fixed;
     width: 100%;
     height: 100%;
     overflow: hidden;
     z-index: 1;
 }
-.star{
+.star {
     position: absolute;
     background-color: $purpleNeon;
     width: 3px;
     height: 3px;
     border-radius: 50%;
-    box-shadow: 0 0 20px rgb(255, 255, 255), 0 0 40px rgba(133, 25, 186, 0.8), 0 0 60px rgba(195, 0, 255, 0.6);
+    box-shadow: 0 0 20px rgb(255, 255, 255), 0 0 40px rgba(133, 25, 186, 0.8),
+        0 0 60px rgba(195, 0, 255, 0.6);
     animation: blink 3s infinite ease-in-out alternate;
 }
 
-@keyframes blink{
-    0%{
+@keyframes blink {
+    0% {
         opacity: 0;
-        transform: scale(0.5); 
+        transform: scale(0.5);
     }
-    100%{
+    100% {
         opacity: 1;
         transform: scale(1);
     }
 }
 
-.musicSwitch{
+.musicSwitch {
     position: relative;
     display: inline-block;
     width: 60px;
     height: 36px;
     margin-top: 20px;
 }
-.musicSwitch input{
+.musicSwitch input {
     opacity: 0;
     width: 0;
     height: 0;
 }
-.slider{
+.slider {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -473,32 +480,33 @@ main{
     right: 0;
     bottom: 0;
     background-color: $backgroundColor;
-    transition: .4s;
+    transition: 0.4s;
     border-radius: 34px;
     border: 2px solid $purpleNeon;
 }
-.icon{
+.icon {
     position: absolute;
     color: $primaryText;
     font-size: 14px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
     line-height: 34px;
     width: 50%;
     text-align: center;
     transition: opacity 0.4s ease;
     pointer-events: none;
 }
-.icon-off{
-    left:1px;
+.icon-off {
+    left: 1px;
 }
-.icon-on{
-    right:1px;
+.icon-on {
+    right: 1px;
     opacity: 0;
-    img{
+    img {
         width: 24px;
-    } 
+    }
 }
-.slider::before{
+.slider::before {
     position: absolute;
     content: "";
     height: 24px;
@@ -507,22 +515,18 @@ main{
     bottom: 2px;
     background-color: $backgroundColor;
     border: 2px solid $purpleNeon;
-    transition: .4s;
+    transition: 0.4s;
     border-radius: 50%;
 }
-input:checked + .slider{
+input:checked + .slider {
     box-shadow: 0 0 20px $purpleNeon;
 }
-input:checked + .slider:before{
+input:checked + .slider:before {
     transform: translateX(24px);
 }
-input:checked + .slider .icon-off{
+input:checked + .slider .icon-off {
     opacity: 0;
 }
-input:checked + .slider .icon-on{
+input:checked + .slider .icon-on {
     opacity: 1;
 }
-
-
-
-
